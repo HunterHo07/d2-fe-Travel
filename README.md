@@ -1,12 +1,81 @@
-# React + Vite
+# TRAVEL6 - Your Modern Travel Planning App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-19.0.0-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-6.3.1-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Currently, two official plugins are available:
+TRAVEL6 is a modern travel planning and exploration application built with React and Vite. It helps users discover new destinations, plan their trips, and create memorable travel experiences.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![TRAVEL6 Screenshot](https://via.placeholder.com/800x400?text=TRAVEL6+Screenshot)
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Interactive Map Exploration**: Browse destinations using Google Maps integration
+- **Trip Planning**: Create and organize travel itineraries
+- **Date Selection**: Choose your travel dates with an intuitive calendar
+- **Responsive Design**: Optimized for both desktop and mobile devices
+- **Modern UI**: Built with styled-components and Framer Motion for smooth animations
+
+## 🛠️ Technologies
+
+- [React](https://reactjs.org/) - UI library
+- [Vite](https://vitejs.dev/) - Build tool and development server
+- [React Router Dom](https://reactrouter.com/) - Navigation and routing
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [Styled Components](https://styled-components.com/) - Component styling
+- [React Google Maps API](https://react-google-maps-api-docs.netlify.app/) - Map integration
+- [React Hook Form](https://react-hook-form.com/) - Form management
+- [React Datepicker](https://reactdatepicker.com/) - Calendar component
+
+## 📋 Prerequisites
+
+- Node.js (v18.0.0 or higher)
+- npm or yarn
+
+## 🚀 Getting Started
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/TRAVEL6.git
+   cd TRAVEL6
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
+
+3. Start the development server
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open your browser and visit `http://localhost:5173`
+
+## 🏗️ Building for Production
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+The build artifacts will be stored in the `dist/` directory.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📬 Contact
+
+- Your Name - [your.email@example.com](mailto:your.email@example.com)
+- Project Link: [https://github.com/yourusername/TRAVEL6](https://github.com/yourusername/TRAVEL6)
+
+## 🙏 Acknowledgments
+
+- [React Icons](https://react-icons.github.io/react-icons/) for icon collection
+- All the amazing open-source libraries that made this project possible
