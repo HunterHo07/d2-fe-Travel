@@ -37,7 +37,7 @@ const Header = () => {
             transition={{ duration: 0.5 }}
           >
             <Link to="/">
-              <FaShip /> OceanVoyager
+              <FaShip /> Jebsen Travel
             </Link>
           </Logo>
 
@@ -55,14 +55,46 @@ const Header = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className={location.pathname === '/booking' ? 'active' : ''}
+                className={location.pathname === '/about' ? 'active' : ''}
               >
-                <Link to="/booking">Book a Cruise</Link>
+                <Link to="/about">About Us</Link>
               </NavItem>
               <NavItem 
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
+                className={location.pathname === '/cruise-info' ? 'active' : ''}
+              >
+                <Link to="/cruise-info">Cruise Info</Link>
+              </NavItem>
+              <NavItem 
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className={location.pathname === '/news' ? 'active' : ''}
+              >
+                <Link to="/news">What's New</Link>
+              </NavItem>
+              <NavItem 
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className={location.pathname === '/team-world' ? 'active' : ''}
+              >
+                <Link to="/team-world">Team World</Link>
+              </NavItem>
+              <NavItem 
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                className={location.pathname === '/packages' ? 'active' : ''}
+              >
+                <Link to="/packages">Special Packages</Link>
+              </NavItem>
+              <NavItem 
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.7 }}
                 className={location.pathname === '/contact' ? 'active' : ''}
               >
                 <Link to="/contact">Contact Us</Link>
@@ -88,8 +120,20 @@ const Header = () => {
               <MobileNavItem className={location.pathname === '/' ? 'active' : ''}>
                 <Link to="/">Home</Link>
               </MobileNavItem>
-              <MobileNavItem className={location.pathname === '/booking' ? 'active' : ''}>
-                <Link to="/booking">Book a Cruise</Link>
+              <MobileNavItem className={location.pathname === '/about' ? 'active' : ''}>
+                <Link to="/about">About Us</Link>
+              </MobileNavItem>
+              <MobileNavItem className={location.pathname === '/cruise-info' ? 'active' : ''}>
+                <Link to="/cruise-info">Cruise Info</Link>
+              </MobileNavItem>
+              <MobileNavItem className={location.pathname === '/news' ? 'active' : ''}>
+                <Link to="/news">What's New</Link>
+              </MobileNavItem>
+              <MobileNavItem className={location.pathname === '/team-world' ? 'active' : ''}>
+                <Link to="/team-world">Team World</Link>
+              </MobileNavItem>
+              <MobileNavItem className={location.pathname === '/packages' ? 'active' : ''}>
+                <Link to="/packages">Special Packages</Link>
               </MobileNavItem>
               <MobileNavItem className={location.pathname === '/contact' ? 'active' : ''}>
                 <Link to="/contact">Contact Us</Link>
@@ -108,7 +152,7 @@ const HeaderContainer = styled.header`
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: ${props => props.scrolled ? 'rgba(255, 255, 255, 0.95)' : 'transparent'};
+  background: ${props => props.scrolled ? 'rgba(255, 255, 255, 0.95)' : '#003366'};
   box-shadow: ${props => props.scrolled ? '0 2px 10px rgba(0, 0, 0, 0.1)' : 'none'};
   transition: var(--transition);
   padding: ${props => props.scrolled ? '0.5rem 0' : '1rem 0'};
@@ -123,16 +167,17 @@ const NavBar = styled.nav`
 const Logo = styled(motion.div)`
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--primary-dark);
+  color: ${props => props.scrolled ? '#003366' : '#FFFFFF'};
 
   a {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    color: inherit;
   }
 
   svg {
-    color: var(--secondary);
+    color: #FFC107;
   }
 `;
 
